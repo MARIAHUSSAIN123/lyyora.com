@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+ <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+
+
+
+    <title>Document</title>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<nav class="w-full bg-[#073327] mt-6 nav">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6" style="height:64px;">
+  
+    <!-- LEFT: Logo + Menu -->
+    <div class="flex items-center gap-6">
+      <!-- Logo -->
+      <img src="./683dc6a2d457096fc98c2069_Logo (6).svg" class="h-9 w-auto" alt="Logo">
+
+      <!-- Desktop Menu (keeps close to logo) -->
+      <ul class="hidden md:flex items-center space-x-6 text-white font-medium">
+        <li><a href="#" class="hover:text-[#C3D5C3]">Home</a></li>
+        <li><a href="#" class="hover:text-[#C3D5C3]">About</a></li>
+        <li><a href="#" class="hover:text-[#C3D5C3]">Lender’s portal</a></li>
+        <li><a href="#" class="hover:text-[#C3D5C3]">Contact</a></li>
+        <li class="relative">
+          <button id="dropdownNavbarButton" data-dropdown-toggle="navbar-dropdown" class="flex items-center hover:text-[#C3D5C3]">
+            Types of Funding
+            <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6"/>
+            </svg>
+          </button>
+          <div id="navbar-dropdown" class="hidden absolute top-10 left-0 bg-white text-black rounded-lg shadow-lg w-44">
+            <ul class="py-2 text-sm nav">
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Types of Funding</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Health Equipment Financing</a></li>
+              <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Practice Expansion Loan</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+ 
+
+    <!-- RIGHT: Apply Button (always right) + Mobile Toggle -->
+    <div class="flex items-center gap-4 ">
+      <!-- Apply button (desktop only) -->
+      <a href="#"
+         class="hidden md:inline-block bg-[#064e3b] text-white px-5 py-2 rounded-full text-sm font-medium shadow-sm hover:bg-white hover:text-[#064e3b] nav">
+        Apply For Funding
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button data-collapse-toggle="mobile-menu" class="md:hidden text-white text-2xl">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU (keeps separate) -->
+  <div id="mobile-menu" class="hidden bg-[#052825] px-6 py-4 text-white space-y-4 md:hidden">
+    <a href="#" class="block">Home</a>
+    <a href="#" class="block">About</a>
+    <a href="#" class="block">Lender’s portal</a>
+    <a href="#" class="block">Contact</a>
+
+    <button data-dropdown-toggle="mobile-dropdown" class="flex items-center">
+      Types of Funding
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-width="2" d="m6 9 6 6 6-6" />
+      </svg>
+    </button>
+
+    <div id="mobile-dropdown" class="hidden bg-white text-black rounded-lg shadow-lg w-44 p-2">
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Funding Option 1</a>
+      <a href="#" class="block px-4 py-2 hover:bg-gray-100">Funding Option 2</a>
+    </div>
+
+    <a href="#" class="block bg-white text-[#052825] px-4 py-2 rounded-full text-sm font-semibold shadow-sm">
+      Apply For Funding
+    </a>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="bg-[#073327] text-white pt-8 md:pt-32 pb-20 px-6 md:px-14 fade-up" >
+ 
+ 
+
+  <div class="hero-popup">
+  
+
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+
+    <!-- LEFT TEXT -->
+    <div>
+      <h1 class="text-4xl md:text-7xl font-medium leading-relaxed data fade-up">
+      <span class="whitespace-nowrap">The Lending Platform</span> <span class="whitespace-nowrap">Built for Healthcare</span><br>clinics
+      </h1>
+
+      <p class="text-gray-200 mt-1 max-w-md input">
+        When Banks Say No, Lyyvora Says Yes. From clinics to med-spas, we make growth simple with fast applications,
+        multiple offers, and lenders who listen.
+      </p>
+
+      <!-- BUTTONS -->
+      <div class="flex flex-wrap gap-4 mt-8">
+
+        <!-- Get Early Access -->
+        <a href="contact.html"
+          class="bg-white text-[#062A27] px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition flex items-center gap-2 font">
+          Get Early Access
+          <img src="icons8-up-left-50.png" class="w-5">
+        </a>
+
+        <!-- Book a Call -->
+        <a href="#"
+          class="bg-[#0A4B3C] text-white px-6 py-3 rounded-full font-medium hover:bg-[#0E5B48] transition flex items-center gap-2 font">
+          Book a 15-min Funding Call
+          <img src="icons8-up-left-50 (1).png" class="w-5">
+        </a>
+
+      </div>
+
+      <!-- DOWN ARROW -->
+      <div class="mt-10">
+        <button class="bg-white w-12 h-12 rounded-full flex items-center justify-center shadow-md font">
+          <img src="./green-arrow-straight.png" class="w-5" />
+        </button>
+      </div>
+
+    </div> <!-- LEFT DIV END HERE -->
+
+
+    <!-- RIGHT CARDS (MOVE THIS OUTSIDE LEFT DIV) -->
+    <div class="hero-image-wrapper flex justify-center items-center hero-popup">
+      <img src="./684b24403e0eab473e5940d0_Cards-p-500.png"
+           alt="cards"
+           class="hero-cards w-full max-w-[450px] fade-right" />
+    </div>
+
+  </div>
+</section>
+
+
+<!-- STATS SECTION -->
+<section class="py-24 text-center px-6 md:px-20 fade-up" >
+ <div class="reveal-left">
+  <!-- HR -->
+  <div class="w-full flex justify-center mb-12">
+    <hr class="w-20 border-[2px] border-[#003B32] rounded-full">
+  </div>
+
+  <!-- STATS GRID -->
+ <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-1 fade-up">
+
+  <div>
+   <span class="text-5xl font-extrabold text-[#155947] data">
+  10 
+  <span class="inline-block scale-x-75 font-extralight text-[#155947]">+</span>
+</span>
+
+    <p class="mt-3 text-gray-700">Trusted network ready to fund</p>
+  </div>
+
+  <div>
+      <span class="text-5xl font-extrabold text-[#155947] data">
+  15M
+  <span class="inline-block scale-x-75 font-extralight text-[#155947] ">+</span>
+</span>
+    <p class="mt-3 text-gray-700">Capital access with multiple lenders</p>
+  </div>
+
+  <div>
+      <span class="text-5xl font-extrabold text-[#155947] data">
+  100%
+
+</span>
+    <p class="mt-3 text-gray-700 fade-left">Focused Healthcare market</p>
+  </div>
+
+</div>
+
+
+
+  <!-- BUTTON -->
+  <div class="flex justify-center mt-10 fade-up">
+   <a href="#"
+  class="bg-[#003B32] hover:bg-[#01473E] text-white px-10 py-4 rounded-full text-[16px] font-medium transition flex items-center gap-2">
+  Book a 15-min Funding Call
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#D1E7DD" stroke-width="2" class="w-4 h-4">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7m0 0H9m8 0v8" />
+  </svg>
+</a>
+
+   
+  </div>
+
+</section>
+
+<div class="max-w-4xl mx-auto px-4 py-10 shadow-[0_25px_60px_rgba(0,0,0,0.12)] rounded-2xl p-8 fade-left">
+
+  <!-- Green Line -->
+  <div class="w-16 h-[2px] bg-green-700 mb-4"></div>
+
+  <!-- Heading -->
+  <h2 class="text-xl font-semibold text-[#003B32] fade-right">
+    1. Connect Your Clinic in Minutes
+  </h2>
+
+  <!-- Description -->
+  <p class="mt-2 text-gray-700 leading-relaxed input fade-up">
+Securely link your business bank account and enter a few clinic details. No hard credit pull, no paperwork just bank-level encryption and a two-minute setup.
+  </p>
+
+  <!-- Image Section -->
+  <div class="mt-8 flex justify-center fade-right">
+    <img src="./card.png" class="w-full max-w-md object-contain" alt="">
+  </div>
+
+</div>
+<section class="w-full bg-white py-20 fade-up">
+
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-10">
+
+    <!-- CARD 1 -->
+    <div class="bg-white p-4">
+      <!-- TEXT -->
+      <div class="mb-6">
+        <div class="w-10 h-[2px] bg-[#003B32] mb-4"></div>
+
+        <h2 class="text-2xl font-semibold text-[#003B32] fade-left">
+          2. Compare Offers Instantly
+        </h2>
+
+        <p class="text-gray-700 mt-3 leading-relaxed input fade-up">
+      Our lender network reviews your real time revenue. Not just credit scores and delivers funding options with full transparency. See terms, rates, and fees clearly before choosing what fits your clinic’s needs.
+        </p>
+      </div>
+
+      <!-- IMAGE - full size, not cropped -->
+      <img 
+        src="./card3 org 1.png" 
+        class="w-full h-auto rounded-xl shadow-lg fade-right"
+        alt=""
+      />
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="bg-white p-4" >
+      <div class="mb-6">
+        <div class="w-10 h-[2px] bg-[#003B32] mb-4"></div>
+
+        <h2 class="text-2xl font-semibold text-[#003B32] fade-left">
+          3. Choose & Get Funded Fast
+        </h2>
+
+        <p class="text-gray-700 mt-3 leading-relaxed input fade-left">
+        Choose the offer that aligns with your growth goals. Once accepted, funds are deposited directly into your business account often within one to two business days. No paperwork. No unnecessary delays or other hussles.
+        </p>
+      </div>
+
+      <img 
+        src="./card2.png"
+        class="w-full h-auto rounded-xl shadow-lg fade-right"
+      />
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="bg-white p-4" >
+      <div class="mb-6">
+        <div class="w-10 h-[2px] bg-[#003B32] mb-4 fade-up"></div>
+
+        <h2 class="text-2xl font-semibold text-[#003B32] fade-up">
+          4. Track & Repay on Autopilot
+        </h2>
+
+        <p class="text-gray-700 mt-3 leading-relaxed fade-right">
+         Track your repayments, cash flow, clinic performance, and key metrics from a single dashboard. With real-time insights, you’ll stay ahead of risks, plan for growth, and be ready for your next expansion.
+        </p>
+      </div>
+
+      <img 
+        src="./card1.png"
+        class="w-full h-auto rounded-xl shadow-lg fade-right"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+
+<!--green card-->
+
+
+<section class="bg-[#062A24] mx-auto my-10 rounded-xl text-white" style="max-width: 92%; padding-top: 70px; padding-bottom: 70px; ">
+ 
+
+  <!-- Narrow Centered Green Box (same as original website) -->
+   <div class="max-w-[900px] mx-auto px-4 fade-left" >
+
+
+    <!-- TOP HR (bold) -->
+    <div class="mb-6" >
+      <hr class="w-14 border-[2.5px] border-white rounded-full" >
+    </div>
+
+    <!-- MAIN HEADING -->
+    <h2 class="text-3xl md:text-5xl font-medium leading-relaxed data fade-left" >
+        <span class="whitespace-nowrap fade-right" >More Lenders. Better</span> <br>
+        <span class="whitespace-nowrap fade-up" >Offers. Smarter Growth.</span>
+    </h2>
+
+    <!-- GRAPH IMAGE CENTER -->
+    <div class="relative flex justify-center mt-12" >
+      <img src="green card.png"
+           class="w-[650px] md:w-[720px] rounded-xl shadow-2xl " />
+
+      <!-- WHITE CARD OVER GRAPH -->
+      <img src="card green 2.svg"
+           class="hidden md:block w-[390px] absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 rounded-xl shadow-xl "/>
+    </div>
+
+    <!-- BOTTOM TEXT GRID -->
+     <div class="mt-16 " >
+    <div class="grid md:grid-cols-2 gap-12 ">
+
+   <!--card-->
+      <div>
+        
+        <h3 class="font-semibold text-lg fade-left" >Tailored for Healthcare</h3>
+        <p class="text-gray-300 mt-2 text-sm leading-relaxed fade-right">
+          We partner with healthcare businesses to understand revenue cycles, common funding needs to expand, hiring needs... etc
+        </p>
+         <hr class="w-100 mb-3 mt-7 border border-[#3f4140] rounded-full"> 
+      </div>
+
+      <!-- CARD 2 -->
+      <div>
+       
+        <h3 class="font-semibold text-lg fade-up" >Smarter and Fast Funding</h3>
+        <p class="text-gray-300 mt-2 text-sm leading-relaxed fade-up" >
+          We partner with healthcare businesses to understand revenue cycles, common funding needs to expand, hiring needs... etc
+        </p>
+         <hr class="w-100 mb-3 mt-7 border border-[#3f4140] rounded-full"> 
+      </div>
+
+      <!-- CARD 3 -->
+      <div>
+        <h3 class="font-semibold text-lg fade-right" >Fast Access to Capital</h3>
+        <p class="text-gray-300 mt-2 text-sm leading-relaxed fade-left" >
+          Fast decisions and funding! Typically within 2–5 business days
+        </p>
+        <hr class="w-100 mb-3 mt-7 border border-[#3f4140] rounded-full" > 
+      </div>
+
+    </div>
+
+  </div>
+  
+</section>
+
+<section class="bg-white py-20">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- TOP HR -->
+    <hr class="w-12 border-2 border-[#0C5144] rounded-full mb-4">
+
+    <!-- MAIN HEADING -->
+    <h2 class="text-3xl md:text-4xl font-semibold text-[#062A24] leading-relaxed mb-12 fade-up">
+      Slow, Rigid, Outdated:<br>
+      Why Traditional <br>Funding Fails <br> Businesses
+    </h2>
+
+    <!-- 1st ROW — 2 CARDS -->
+    <div class="grid md:grid-cols-2 gap-10 mb-10">
+
+      <!-- CARD 1 -->
+      <div class="group bg-[#F7F7F5] hover:bg-[#113B35] 
+                  transition-all duration-500 p-6 rounded-xl 
+                  shadow-sm hover:shadow-2xl hover:-translate-y-3 cursor-pointer">
+
+        <h3 class="text-[#062A24] group-hover:text-white font-semibold mb-3 fade-up">
+          Banks Require Collateral
+        </h3>
+
+        <p class="text-gray-600 group-hover:text-gray-200 text-sm leading-relaxed fade-right">
+          Most clinics lack assets to pledge and banks are not flexible.
+        </p>
+
+        <div class="mt-6 flex justify-end">
+          <img src="arrow.png" class="w-6 opacity-60 group-hover:opacity-100">
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="group bg-[#F7F7F5] hover:bg-[#113B35] 
+                  transition-all duration-500 p-6 rounded-xl 
+                  shadow-sm hover:shadow-2xl hover:-translate-y-3 cursor-pointer">
+
+        <h3 class="text-[#062A24] group-hover:text-white font-semibold mb-3 fade-up">
+          Government Loans Are Slow
+        </h3>
+
+        <p class="text-gray-600 group-hover:text-gray-200 text-sm leading-relaxed fade-right">
+          Approvals take months and criteria are strict.
+        </p>
+
+        <div class="mt-6 flex justify-end">
+          <img src="arrow.png" class="w-6 opacity-60 group-hover:opacity-100">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 2nd ROW — 2 CARDS -->
+    <div class="grid md:grid-cols-2 gap-10 mb-10">
+
+      <!-- CARD 3 -->
+      <div class="group bg-[#F7F7F5] hover:bg-[#113B35]
+                  transition-all duration-500 p-6 rounded-xl 
+                  shadow-sm hover:shadow-2xl hover:-translate-y-3 cursor-pointer">
+
+        <h3 class="text-[#062A24] group-hover:text-white font-semibold mb-3 fade-right">
+          VCs Don't Fund Small Clinics
+        </h3>
+
+        <p class="text-gray-600 group-hover:text-gray-200 text-sm leading-relaxed fade-left">
+          They want high-growth startups, not service-based businesses.
+        </p>
+
+        <div class="mt-6 flex justify-end">
+          <img src="arrow.png" class="w-6 opacity-60 group-hover:opacity-100">
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="group bg-[#F7F7F5] hover:bg-[#113B35]
+                  transition-all duration-500 p-6 rounded-xl 
+                  shadow-sm hover:shadow-2xl hover:-translate-y-3 cursor-pointer">
+
+        <h3 class="text-[#062A24] group-hover:text-white font-semibold mb-3 fade-left">
+          Most Loans Aren’t Built For Women
+        </h3>
+
+        <p class="text-gray-600 group-hover:text-gray-200 text-sm leading-relaxed fade-up">
+          Standard products don't reflect the realities of women-led clinics.
+        </p>
+
+        <div class="mt-6 flex justify-end">
+          <img src="arrow.png" class="w-6 opacity-60 group-hover:opacity-100">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CENTER WIDE CARD — CARD 5 -->
+    <div class="group bg-[#F7F7F5] hover:bg-[#113B35]
+                transition-all duration-500 p-8 rounded-xl 
+                shadow-sm hover:shadow-2xl hover:-translate-y-3 cursor-pointer
+                max-w-3xl mx-auto">
+
+      <h3 class="text-[#062A24] group-hover:text-white font-semibold mb-3 fade-left">
+        Cash Flow Gaps Limit Your Growth
+      </h3>
+
+      <p class="text-gray-600 group-hover:text-gray-200 text-sm leading-relaxed fade-right">
+        Without flexible working capital, clinics scale slower than they should.
+      </p>
+
+      <div class="mt-6 flex justify-end">
+        <img src="arrow.png" class="w-6 opacity-60 group-hover:opacity-100">
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<div class="w-full bg-[#04443A] py-16 px-4 text-white">
+    <div class="max-w-[1100px] mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <!-- TEXT -->
+        <h2 class="text-3xl md:text-4xl font-semibold leading-snug text-center md:text-left fade-up">
+            Empowering women-owned businesses with<br />
+            the funding they deserve.
+        </h2>
+
+        <!-- BUTTONS -->
+        <div class="flex flex-col gap-4">
+
+            <!-- BUTTON 1 (Filled) -->
+          <a href="contact.html"><button 
+                class="px-6 py-3 bg-[#003A32] rounded-full border border-[#003A32]
+                       flex items-center justify-center gap-2 text-sm font-semibold
+                       transition-all duration-300 hover:bg-[#005345] hover:-translate-y-0.5 group">
+
+                Get Early<br />Access</a></button>
+
+                <img src="arrow.png"
+                     class="w-3 transition-all duration-300 group-hover:-translate-y-0.5" />
+            </button>
+
+            <!-- BUTTON 2 (Outline) -->
+            <button 
+                class="px-6 py-3 rounded-full border border-white
+                       flex items-center justify-center gap-2 text-sm font-semibold
+                       transition-all duration-300 hover:bg-white hover:text-black hover:-translate-y-0.5 group">
+
+                Book a 15-min<br />Funding Call
+
+                <img src="arrow.png"
+                     class="w-3 transition-all duration-300 group-hover:-translate-y-0.5" />
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<!--female card-->
+<div class="w-full py-20 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+    <!-- LEFT IMAGE -->
+    <div>
+      <img src="./female.jpeg" class="w-full h-auto object-cover rounded-lg" />
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div>
+      <!-- GREEN LINE -->
+      <div class="w-12 h-[2px] bg-[#0b4f45] mb-4"></div>
+
+      <!-- TITLE -->
+      <h2 class="text-3xl md:text-4xl font-semibold text-[#083b35] leading-snug mb-8 fade-left">
+        What makes us stand out<br />
+        from the rest?
+      </h2>
+
+      <!-- 4 ITEMS IN 2×2 GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 fade-up">
+
+        <!-- Card 1 -->
+        <div>
+          <h3 class="font-semibold text-lg text-[#083b35] fade-right">Smart Solutions, Always Evolving</h3>
+          <p class="text-[#4e4e4e] text-sm mt-2 leading-relaxed fade-left">
+            We go beyond faster approvals. Lyyvora connects you with an ecosystem of partners who support healthcare businesses at every stage of growth.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div>
+          <h3 class="font-semibold text-lg text-[#083b35] fade-up">Your Data. Your Control.</h3>
+          <p class="text-[#4e4e4e] text-sm mt-2 leading-relaxed fade-right">
+            We protect your data with bank-level encryption and never sell it. Your clinic, your story, your control.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div>
+          <h3 class="font-semibold text-lg text-[#083b35] fade-up">AI That Works for You</h3>
+          <p class="text-[#4e4e4e] text-sm mt-2 leading-relaxed fade-right">
+            Our AI-powered platform connects to your business’s systems and analyzes real-time data to unlock the best funding options.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div>
+          <h3 class="font-semibold text-lg text-[#083b35] fade-up">Support That Gets It</h3>
+          <p class="text-[#4e4e4e] text-sm mt-2 leading-relaxed fade-right">
+            From first click to funding, you’ll talk to real humans who understand the challenges of running a woman-owned healthcare business.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!--image card-->
+<!-- RESPONSIVE BIG IMAGE GRID -->
+<section class="bg-[#062A24] mx-auto my-10 rounded-xl text-white px-4 py-14" style="max-width: 92%;">
+  <div class="max-w-5xl mx-auto">
+
+    <!-- TEXT + BUTTON -->
+    <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 mb-8">
+
+      <h2 class="text-2xl font-semibold border-l-4 border-gray-400 pl-3 leading-snug fade-up">
+        For Lenders: Access a New <br />
+        Pipeline of Woman-Owned <br />
+        Clinics
+      </h2>
+
+      <button class="bg-white text-[#0b2a21] px-5 py-2 text-sm rounded-md font-medium shadow w-full md:w-auto">
+        Apply for Funding
+      </button>
+    </div>
+
+    <!-- PARAGRAPH -->
+    <div class="space-y-4 text-sm leading-relaxed mb-10">
+      <p class="fade-left">
+        Join Lyvcare’s network of lending partners and connect with women entrepreneurs in healthcare
+        actively seeking capital. Backed by real-time revenue insights and performance data.
+      </p>
+
+      <p class="fade-left">
+        We start with women-owned healthcare businesses, and as we expand, our platform will unlock
+        lending opportunities across other service-based industries ensuring your pipeline keeps 
+        growing with us.
+      </p>
+    </div>
+
+    <!-- IMAGES GRID (FULL RESPONSIVE FIXED) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="img-hover w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-xl shadow-lg ">
+        <img src="male dr.jpg" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="img-hover w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-xl shadow-lg">
+        <img src="lady dr.jpg" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="img-hover w-full h-64 sm:h-72 md:h-80 overflow-hidden rounded-xl shadow-lg">
+        <img src="girl dr.jpg" class="w-full h-full object-cover" />
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="max-w-6xl mx-auto py-16 text-center">
+
+  <!-- TOP HEADING -->
+  <div class="mb-14">
+    <div class="w-24 h-0.5 bg-[#0b4b3a] mx-auto mb-4"></div>
+
+    <h2 class="text-3xl md:text-4xl font-semibold text-[#0b4b3a] ">
+      — The Lyyvora Edge —
+    </h2>
+
+    <h3 class="text-3xl md:text-4xl font-semibold text-[#0b4b3a] mt-2">
+      Where AI Meets Empathy
+    </h3>
+  </div>
+
+  <!-- 3 FEATURE BOXES -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+    <!-- BOX 1 -->
+    <div>
+      <h4 class="text-xl font-semibold text-[#0b4b3a]">
+        48-Hour <br /> Funding Options
+      </h4>
+      <p class="text-sm text-gray-600 mt-3">
+        When banks take 4–12 weeks to decide
+      </p>
+    </div>
+
+    <!-- BOX 2 -->
+    <div>
+      <h4 class="text-xl font-semibold text-[#0b4b3a]">
+        One Application, Multiple <br /> Offers
+      </h4>
+      <p class="text-sm text-gray-600 mt-3">
+        No more 1-lender, 1-offer limits
+      </p>
+    </div>
+
+    <!-- BOX 3 -->
+    <div>
+      <h4 class="text-xl font-semibold text-[#0b4b3a]">
+        100% Online, <br /> Zero Paperwork
+      </h4>
+      <p class="text-sm text-gray-600 mt-3">
+        While others stay manual and outdated
+      </p>
+    </div>
+
+  </div>
+
+</section>
+<section class="py-16 bg-[#f7f7f7] fade-left">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <!-- IMAGE -->
+    <img src="female 2.jpeg" 
+         class="hero-hover max-w-3xl mx-auto rounded-lg shadow-sm object-cover fade-right" />
+
+    <!-- BUTTONS -->
+    <div class="flex flex-wrap justify-center gap-6 mt-8">
+
+      <!-- BUTTON 1 -->
+      <a href="contact.html"
+        class="bg-[#0b4b3a] text-white px-6 py-2 rounded-full text-sm font-medium flex items-center gap-1 hover:opacity-90 transition">
+        Get Early Access<img src="icons8-up-left-50 (1).png" class="w-3">
+      </a>
+
+      <!-- BUTTON 2 -->
+      <a href="#"
+        class="bg-[#d3e2df] text-[#0b4b3a] px-6 py-2 rounded-full text-sm font-medium flex items-center gap-1 hover:opacity-90 transition">
+        Book a 15-min Funding Call <img src="icons8-up-left-50.png" class="w-3">
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="faq-section fade-left">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+
+  <div class="faq-item fade-right">
+    <div class="faq-question">
+      <span>01 Is Lyvvora a lender or a bank?</span>
+      <span class="arrow">→</span>
+    </div>
+    <div class="faq-answer fade-up">
+      Lyvvora is a Lending-as-a-Service platform. We connect your clinic with multiple vetted lenders ready to fund businesses like yours.
+    </div>
+  </div>
+
+  <div class="faq-item fade-right">
+    <div class="faq-question">
+      <span>02 What do I need to apply?</span>
+      <span class="arrow">→</span>
+    </div>
+    <div class="faq-answer fade-up">
+      Basic clinic info and your monthly revenue data. You can connect bank/POS OR upload financial documents manually.
+    </div>
+  </div>
+
+  <div class="faq-item fade-right">
+    <div class="faq-question">
+      <span>03 What kinds of clinics do you work with?</span>
+      <span class="arrow">→</span>
+    </div>
+    <div class="faq-answer">
+      We support chiropractors, dental clinics, med spas, therapists & more — typically earning $15K+/month.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>04 Does Lyvvora charge any fees?</span>
+      <span class="arrow">→</span>
+    </div>
+    <div class="faq-answer">
+      No upfront fees. Lyvvora earns when a match results in funding. You stay in control.
+    </div>
+  </div>
+</section>
+
+  <footer class="lv-footer">
+  <div class="lv-container">
+
+    <!-- TOP SECTION -->
+    <div class="lv-top">
+      <div class="lv-logo-block">
+        <h2 class="lv-logo">Lyvvora</h2>
+        <p class="lv-logo-text">
+          Where your clinic’s success drives<br>
+          better funding.
+        </p>
+      </div>
+
+      <div class="lv-top-links">
+        <a href="#">Early Access for Clinics ↗</a>
+        <a href="#">Contact sales executive ↗</a>
+      </div>
+    </div>
+
+    <hr class="lv-line">
+
+    <!-- MIDDLE -->
+    <div class="lv-middle">
+      <div class="lv-col">
+        <h4>PAGES</h4>
+        <a href="#">Home</a>
+        <a href="#">Lender's portal</a>
+        <a href="#">About</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="lv-col">
+        <h4>LEGAL NOTICE</h4>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Commercial-Loan Brokerage Disclosure</a>
+      </div>
+    </div>
+
+    <hr class="lv-line">
+
+    <!-- COPYRIGHT -->
+    <p class="lv-copy">
+      Copyright © 2025 Lyvvora 17095937 Canada Inc. All rights reserved. / Tous droits réservés.
+    </p>
+
+  </div>
+</footer>
+
+
+
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+ <script src="app.js"></script>
+</body>
+</html>

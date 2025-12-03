@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lyyora Contact Clone</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <div class="logo">Lyyora</div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Lender’s Portal</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <a class="apply-btn" href="#">Apply for Funding</a>
+
+      <div class="menu-toggle">☰</div>
+    </div>
+
+    <ul class="mobile-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Lender’s Portal</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a class="apply-mobile" href="#">Apply for Funding</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- CONTACT TITLE -->
+  <section class="contact-section">
+    <h2>Contact us</h2>
+    <div class="line"></div>
+    <p class="subtext">
+      Whether you're a clinic exploring funding options, a lender interested in <br>
+      partnering with Lyyora, or just want to say hello!
+    </p>
+  </section>
+
+
+  <!-- CONTACT FORM BOX -->
+  <div class="contact-wrapper">
+    <div class="contact-form-box">
+
+      <form>
+
+        <div class="row">
+          <div class="field">
+            <label>First name</label>
+            <input type="text">
+          </div>
+
+          <div class="field">
+            <label>Last name</label>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Email</label>
+            <input type="email">
+          </div>
+
+          <div class="field">
+            <label>Phone</label>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Company</label>
+            <input type="text">
+          </div>
+
+          <div class="field">
+            <label>Subject</label>
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="row-full">
+          <label>Message "How can I help you :)”</label>
+          <textarea></textarea>
+        </div>
+
+        <div class="submit-row">
+          <button class="submit-btn">Submit</button>
+
+          <div class="social-right">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+
+  <!-- TWO BOXES -->
+  <section class="two-boxes">
+    <div class="box">
+      <div class="icon"><img src="./123.svg" alt=""></div>
+      <h3>Apply for Funding</h3>
+      <p>Get matched with the right lenders — Quick application, <br> helping clinics.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="box">
+      <div class="icon"><img src="./456.svg" alt=""></div>
+      <h3>Become a lending partner</h3>
+      <p>Gain access to growth-minded, qualified <br> lending applicants.</p>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="footer-logo">Lyyora</div>
+
+      <div class="footer-links">
+        <a href="#">Early Access for Clinics →</a>
+        <a href="#">Contact sales executive →</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="column">
+        <h4>PAGES</h4>
+        <a href="#">Home</a>
+        <a href="#">Lender’s portal</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="column">
+        <h4>LEGAL NOTICE</h4>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Commercial Lending Disclosure</a>
+      </div>
+    </div>
+
+    <p class="copyright">
+      Copyright © 2025 Lyyora. All rights reserved.
+    </p>
+
+  </footer>
+
+
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    toggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("show");
+    });
+
+   
+  const items = document.querySelectorAll(".fade-up");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  });
+
+  items.forEach(item => observer.observe(item));
+</script>
+
+
+
+</body>
+</html>
