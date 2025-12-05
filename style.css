@@ -1,3 +1,8 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box ;
+}
 .data{
      font-family: "DM Serif Display", serif;
   
@@ -198,3 +203,4 @@ body{
   transform: scale(1.03);
   box-shadow: 0 12px 30px rgba(0,0,0,0.2);
 }
+
